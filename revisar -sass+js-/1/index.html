@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+<script>
+        window.console = window.console || function(t) {};
+</script>
+<script>
+    if (document.location.search.match(/type=embed/gi)) {
+      window.parent.postMessage("resize", "*");
+    }
+</script>
+
+    <title>Document</title>
+</head>
+<body>
+    <blockquote>
+        <span>este es</span>
+        <span>un</span>
+        <span>ejemplo</span>
+        <span>de</span>
+        <span>que</span>
+        <span>puedo</span>
+        <span>hacer</span>
+    </blockquote>
+<script>
+         function animate() {
+  document.querySelector('blockquote').classList.toggle('animate');
+}
+
+document.addEventListener('click', animate);
+
+setTimeout(animate, 1000);
+    </script>
+</body>
+</html>
